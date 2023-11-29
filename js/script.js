@@ -6,9 +6,14 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro e
 */
 
 // SELEZIONO ELEMENTI UTILI IN HTML & VARIABILI PREIMPOSTATE
-
+const bottone = document.getElementById("btn");
+const container = document.getElementById("general-container");
 // FUNZIONE CREA ELEMENTO
-
+function creaElemento(tag, classe){
+    const elemento = document.createElement(tag);
+    elemento.classList.add(classe);
+    return elemento;
+}
 // AL CLICK SUL BOTTONE INSERISCO ELEMENTO SQUARE ALLINTERNO DEL CONTAINER
     // CREO CICLO FOR
         // CREO ELEMENTO DIV CON LA FUNZIONE E ASSEGNO LA CLASSE SQUARE
